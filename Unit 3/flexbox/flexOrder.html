@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Order</title>
+        <style>
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            .box {
+                height: 100px;
+                text-align: center;
+                width: 100%;
+            }
+            
+             .box.lime {
+                 width: 100%;
+                 order: 1;
+                 background-color:#b3f442;
+            }
+            
+            .box.dark_blue {
+                width: 50%;
+                order: 2;
+                background-color: #000080;
+            }
+            
+            .box.light_blue {
+                width: 50%;
+                order: 3;
+                background-color: #0000FF;
+            }
+            
+            .box.green {
+                width: 100%;
+                order:4;
+                background-color: #005000;
+            }
+            
+            .box.red{
+                width: 20%;
+                order: 5;
+                background-color: red;
+            }
+            
+            .box.orange{
+                width: 60%;
+                order: 6;
+                background-color: orange;
+            }
+            
+            .box.seafoam{
+                width: 20%;
+                order: 7;
+                background-color: #41f4bb;
+            }
+            
+          
+            
+    @media (min-width: 600px) and (max-width: 800px) {
+           .box.lime {
+               order:7;
+               width: 20%;
+           }
+           .box.seafoam {
+               order: 1;
+               width: 100%;
+           }
+       }
+    @media screen and (max-width: 550px){
+        
+        .container{
+            flex-direction: column-reverse;
+        }
+      
+        .box.dark_blue {
+             width: 100%;
+         }
+        .box.red {
+             width: 100%;
+         }
+         .box.orange {
+             width: 100%;
+         }
+         .box.seafoam {
+             width: 100%;
+         }
+         .box.light_blue {
+             width: 100%;
+         }
+    }
+    
+        
+         
+        </style>
+    </head>
+    <body>
+        
+        
+        
+        <div class="container">
+            <header class="box lime"></header>
+            <div class="box dark_blue"></div>
+            <div class="box light_blue"></div>
+            <div class="box green"></div>
+            <div class="box red"></div>
+            <div class="box orange"></div>
+            <div class="box seafoam"></div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

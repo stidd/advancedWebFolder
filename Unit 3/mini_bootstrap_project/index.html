@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <style>
+        img {
+            box-shadow: 1px 1px 1px 1px;
+        }
+            .jumbotron{
+                background: #76b852; /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #76b852, #8dc26f); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #76b852, #8dc26f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: white;
+                /*text-align: center;*/
+                background: url("https://cdn.patch.com/users/714975/2015/11/T800x600/201511564a2abbc943a.jpg");
+                
+                background-position: center;
+                background-size: cover;
+            }
+            .nav{
+               background-color: green; 
+            }
+            .nav.navbar-nav li a {
+                color: white;
+            }
+            button.navbar-toggle.collapsed{
+                border: none;
+            }
+            .navbar-inverse .navbar-brand {
+                color: #f7efe3;
+            }
+            .navbar-inverse {
+                border-radius: 5px;
+            }
+            .gallery {
+                margin-top: 20px;
+            }
+            .footballButton{
+                margin-top: 10px;
+            }
+            .table {
+                margin-top: 20px;
+            }
+            .section{
+                margin-top: 30px;
+            }
+           .vid{
+               position: relative;
+               padding-bottom: 56.25%;
+               padding-top: 25px;
+               height:0;
+           }
+            iframe{
+                position: absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+            }
+            .stats{
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Nav -->
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1>Arundel High School</h1>
+            </div>
+            
+            <nav class="nav navbar-inverse">
+                <div class="navbar-header">
+                   <!--Button for user to collapse or uncollapse the navbar -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navLinks">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#">Wildcats</a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navLinks">
+                     <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">Counseling</a></li>
+                        <li><a href="#">Academics</a></li>
+                        <li><a href="#">Athletics</a></li>
+                        <li><a href="#">Students</a></li>
+                        <li><a href="#">Parents</a></li>
+                        <li><a href="#">Cafeteria</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+         <!--Gallery-->
+            
+            <div class="row gallery">
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img class="img-responsive" src="http://www.trbimg.com/img-57be3669/turbine/ph-ac-cs-football-preview-arundel-20160825">
+                    </div>
+                    
+                </div>
+                <div class="col-sm-4">
+                    <div><img class="img-responsive" src="http://s3.amazonaws.com/vnn-aws-sites/9311/files/2017/04/4e27d21f-1b2d-11e7-b689-062bf91906e7-arundelvsnortheast-600x338.png"></div>
+                </div>
+                <div class="col-sm-4">
+                    <div><img class="img-responsive" src="https://cdn.patchcdn.com/users/41515/2012/11/T600x450/1d271dea2517572752b02c9ffb99a749.jpg"></div>
+                </div>
+            </div>
+            
+            <div class="row stats">
+                <div class="col-xs-12">
+                <h3>Stats</h3>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Row</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>Carter</td>
+                                <td>johncarter@mail.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Peter</td>
+                                <td>Parker</td>
+                                <td>peterparker@mail.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>John</td>
+                                <td>Rambo</td>
+                                <td>johnrambo@mail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            
+            
+            
+            <!--video section-->
+            
+            <div class="container">
+                <div class="col-lg-12 section">
+                    <h3>Media Scrum</h3>
+                    <div class="vid">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/irFlUNE3V1Q" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

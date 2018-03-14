@@ -1,0 +1,21 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.weather {
+    max-width: 50%;
+    float: right;
+}
+
+.hero {
+    background-position: center;
+}
+
+.scores {
+    width: 50%;
+    float: left;
+}
+
+
+

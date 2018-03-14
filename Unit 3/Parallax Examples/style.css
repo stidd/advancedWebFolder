@@ -1,0 +1,119 @@
+/* the basic setup */
+
+hr {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.heightAdjustment {
+  height: 4000px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.top-buffer {
+  margin-top: 15px;
+}
+/* Parallax */
+
+.bird-box {
+  position: relative;
+  height: 600px;
+  background-image: url("images/bird-bg.jpg");
+  background-size: auto 600px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  /*   where the magice occurs  we are actually scrolling the bird-box away   */
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.logo {
+  height: 100px;
+  width: 100%;
+  background-image: url("images/headerlogo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* absolutely positioned element within relative background image  also has -50px margin to accomodate for size of image which re-centers it :) */
+
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.fore-bird {
+  width: 960px;
+  height: 733px;
+  background-image: url(images/fore-bird.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  margin-top: 380px;
+}
+
+.back-bird {
+  width: 960px;
+  height: 298px;
+  background-image: url(images/back-bird.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+}
+
+/* Model Grid */
+
+.figures {
+  position:relative;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.figures.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.figures .figcaption:hover {
+  left: 10%;
+
+}
+
+
+.clothes-pics .figcaption{
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  background-color: black;
+  color: white;
+  padding: 2px 8px;
+  font-size: 11px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+.large-window {
+  height: 650px;
+  background-image: url(images/model2.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 50%;
+  margin-top: 100px;
+  border: 2px solid black;
+}

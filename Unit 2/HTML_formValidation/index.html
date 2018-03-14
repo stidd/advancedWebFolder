@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- action - where the form send data to -->
+    <!-- method - what HTTP method (get/post) -->
+
+
+
+
+    <!-- <h1>Login</h1> -->
+
+    <!-- <form>-->
+    <!--    <label for="">Username: <input name="username" type="text" placeholder="username"></label>-->
+    <!--    <label for="">Password: <input name="password" type="password" placeholder="password"></label>-->
+    <!--    <input type="submit">-->
+    <!--</form> -->
+
+    <!-- <form>-->
+    <!--    <label for="email">Email:</label>-->
+    <!--    <input id="email" name="username" type="email" placeholder="email" required>-->
+
+    <!--    <label for="password">Password:</label>-->
+    <!--    <input id="password" name="password" type="password" placeholder="password" required>-->
+
+    <!--    <input type="submit">-->
+    <!--</form> -->
+    <!-- <p>Do you prefer cats or dogs?</p>-->
+    <!--<form action="">-->
+    <!--    <label for="dogs">Dogs:</label>-->
+    <!--    <input name="petChoice" id="dogs" type="radio" value="DOGS">-->
+
+    <!--    <label for="cats">Cats:</label>-->
+    <!--    <input name="petChoice" id="cats" type="radio" value="CATS">-->
+
+    <!--    <p>What's your favorite current mood?</p>-->
+    <!--    <select name="mood" id="">-->
+    <!--        <option value="happy">:)</option>-->
+    <!--        <option value="gray">: |</option>-->
+    <!--        <option value="sad">:(</option>-->
+    <!--    </select>-->
+
+    <!--    <textarea name="paragraph" id="" cols="10" rows="10"></textarea>-->
+
+    <!--    <button>Go!</button>-->
+    <!--</form> -->
+
+
+    <h1>Register</h1>
+
+    <form action="">
+        <label for="firstName">First Name:</label>
+        <input name="firstName" id="firstName" type="text" placeholder="John" required>
+        <label for="lastname">Last Name:</label>
+        <input name="lastName" id="lastName" type="text" placeholder="Smith" required>
+
+        <div>
+            <label for="genderM">Male</label>
+            <input name="genderChoice" id="genderM" type="radio" value="MALE">
+
+            <label for="genderF">Female</label>
+            <input name="genderChoice" id="genderF" type="radio" value="FEMALE">
+
+            <label for="none">Other</label>
+            <input name="genderChoice" id="none" type="radio" value="NONE">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" name="username" type="email" placeholder="your email" required>
+
+            <label for="userPassword">Password:</label>
+            <input id="userPassword" name="password" type="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+        </div>
+
+        <div>
+            <label for="">Birthday:</label>
+            <select name="" id="">
+                <option value="" selected>Month</option>
+                <option value="jan">Jan</option>
+                <option value="feb">Feb</option>
+                <option value="mar">Mar</option>
+                <option value="apr">Apr</option>
+                <option value="may">May</option>
+            </select>
+            <select name="" id="">
+                <option value="" selected>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <select name="" id="">
+                <option value="" selected>Year</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="">I agree to the terms and conditions</label>
+            <input type="checkbox">
+        </div>
+
+
+        <button>Submit</button>
+    </form>
+
+
+
+
+
+</body>
+
+</html>
